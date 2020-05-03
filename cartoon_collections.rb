@@ -5,4 +5,7 @@ def greet_characters(array)
 end
 
 def list_dwarves(array)
+  array.each_with_index do | element, index |
+    array[index] = element 
+    p "#{index}. #{element}."
 end 
